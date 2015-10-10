@@ -1,9 +1,14 @@
+# Editor scratch
+*.sublime-project
+
 # Composer files
 composer.phar
 vendor/
+htdocs/vendor/
 
 # Local configs
 config/autoload/*.local.php
+htdocs/includes/config.php
 
 # Binary gettext files
 *.mo
@@ -14,6 +19,11 @@ data/cache/
 data/sessions/
 data/tmp/
 temp/
+htdocs/data/logs/
+htdocs/data/cache/
+htdocs/data/sessions/
+htdocs/data/tmp/
+htdocs/temp/
 
 # Legacy ZF1
 demos/

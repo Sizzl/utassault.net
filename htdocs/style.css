@@ -1,0 +1,351 @@
+/*---------------------------------
+	IMPORTS
+-----------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Jura:400,500,600,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+
+/** DEFAULTS **/
+
+body
+{
+  font-family		: 'Open Sans', Tahoma, Arial, sans-serif;
+  color				: #ffffff;
+}
+  
+a
+{
+  border-bottom		: 1px dotted #cccccc;
+  color				: #CCCCCC;
+  text-decoration	: none;
+}
+
+a:hover
+{
+  margin			: 0px;
+  padding			: 0px;
+  border-bottom		: 1px solid #cccccc !important;
+  text-decoration	: none;
+}
+
+p
+{
+  font-size			: 12px;
+  font-family		: 'Open Sans', Tahoma, Arial, sans-serif;
+}
+
+/** TOP BAR **/
+#TopBar
+{
+	width			: 100%;
+	border-bottom	: 1px #ffffff solid;
+	background-color: rgba(0,0,0,0.8);
+	
+}
+
+#TopNewsTicker
+{
+	float			: left;
+	margin-top		: 5px;
+	margin-bottom	: 7px;
+}
+
+#TopLinks
+{
+	float			: right;
+	margin-top		: 5px;
+	margin-bottom	: 7px;
+}
+
+/** TITLE BAR **/
+#TitleBar
+{
+	width			: 100%;
+	border-bottom	: 1px #ffffff solid;
+	color			: #ffffff;
+	background-color: rgba(0,0,0,0.4);
+	padding-top		: 10px;
+	padding-bottom	: 10px;
+}
+
+#TitleBarInner
+{
+	padding-bottom	: 10px;
+	padding-top		: 5px;
+	clear			: both;
+}
+
+#TitleBarTitle
+{
+	float			: left;
+	color			: #ffffff;
+}
+
+#TitleBarTitle h1
+{
+	display			: inline;
+	margin-top		: 15px;
+	color			: #ffffff;
+	text-transform	: uppercase;
+	font-size		: 48px;
+	line-height		: 48px;
+	margin-bottom	: 5px;
+}
+
+#TitleBarLogo
+{
+	float			: right;
+	border			: 1px solid #333333;
+}
+
+/** MENU BAR **/
+#MenuBar
+{
+	display			: inline-block;
+	padding-right	: 10px;
+	border-right	: 1px solid #ffffff;
+	font-size		: 12px;
+}
+
+/** SCORE BAR **/
+#ScoreBar
+{
+	width			: 100%;
+	border-bottom	: 1px #ffffff solid;
+	color			: #ffffff;
+	background-color: rgba(0,0,0,0.6);
+	margin-bottom	: 20px;
+	font-size		: 14px;
+}
+
+.ScoreBarBox
+{
+  margin-top: 0px; margin-bottom: 0px; padding-bottom: 2px; font-weight: 700; font-family: 'Jura';
+}
+
+.ScoreBarBox .RedTeam
+{
+  background-color	: rgba(255,0,0,0.4);
+}
+
+.ScoreBarBox .BlueTeam
+{
+  background-color	: rgba(0,0,255,0.4);
+}
+
+.RedTeam,
+.BlueTeam
+{
+  clear				: both;
+  width				: 100%;
+}
+
+.TheTeam
+{
+  float				: left;
+  padding-left		: 5px;
+}
+
+.TheScore
+{
+  float				: right;
+  padding-right		: 5px;
+}
+
+/** FOOTER **/
+#Footer
+{
+	width			: 100%;
+	height			: 30px;
+	border-top		: 1px #ffffff solid;
+	position		: fixed;
+	bottom			: 0;
+	color			: #ffffff;
+	background-color: rgba(0,0,0,0.95);
+	padding-top		: 5px;
+	font-size		: 10px;
+}
+
+/** SIDE COLUMN **/
+.SideColumnBox
+{
+	width: 100%; font-size: 11px; padding: 10px; padding-top: 7px; height: auto; border: 1px solid #333333; background-color: rgba(0,0,0,0.4); margin-bottom: 20px; min-height: 50px;
+}
+
+.SideColumnBoxHeader
+{
+	font-size: 14px; text-transform: uppercase; text-align: left; line-height: 14px; margin: 0px !important; margin-bottom: 5px !important; border-bottom: 1px solid #333333; padding-top: 0px; padding-bottom: 5px;
+}
+
+.caption
+{
+  width: 100% !important;
+}
+
+/** PAGE ELEMENTS **/
+#MainContent
+{
+	clear		: both;
+	margin-top	: 20px;
+}
+#MainContent h1
+{
+	margin-top: 0px !important;
+	border-bottom: 1px solid #ffffff;
+	margin-bottom: 0px;
+	padding-bottom: 5px !important;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 36px;
+	line-height: 36px;
+}
+
+/*---------------------------------
+	OVERRIDES
+-----------------------------------*/
+h1,h2,h3,h4,h5,h6{
+font-family: "Jura", arial, verdana, sans-serif;
+font-weight:600;
+}
+
+thead th,
+tbody th{
+font-family: "Arimo", arial, verdana, sans-serif;
+}
+
+button,
+a.btn,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]{
+font-family: "Arimo", arial, verdana, sans-serif;
+}
+
+.menu{
+font-family: "Arimo", arial, verdana, sans-serif;
+}
+
+blockquote{
+font-family: "Arimo", arial, verdana, sans-serif;
+}
+
+/*---------------------------------
+	LAYOUT
+-----------------------------------*/
+body{
+margin:0;
+padding:0 0 0 0;
+color:#ffffff;
+background-color: #000000 !important;
+background-image:url('images/background.jpg');
+font:normal 0.8em/150% 'Open Sans', arial, verdana, sans-serif;
+text-shadow: 0 0 1px transparent; /* google font pixelation fix */
+}
+
+a:hover,
+a:visited:hover,
+a:active:hover
+{
+  border-bottom: 1px #666666 dotted;
+}
+#wrap{
+width:100%;
+margin:30px auto 30px auto;
+padding:0 2%;
+border:1px solid #ccc;
+}
+
+
+#footer{
+text-align:center;
+padding:20px;
+margin:0;
+border-top:1px solid #ddd;
+color:#999;
+font-size:0.8em;
+text-shadow:0px 1px 1px #fff;
+position: relative;
+top:0;
+left:0;
+background:#fff;
+}
+
+	#link-top{
+	display:none;
+	}
+
+/* NAV BAR*/
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width: 100%;
+background:#000;
+color:#fff;
+z-index:1000;
+}
+
+	.navbar #logo{
+	position:absolute;
+	top:0;
+	right:0;
+	padding:0.5em 1em;
+	font-size: 1.7em;
+	color:#efefef;
+	text-decoration:none;
+	}
+
+	.navbar span{
+	color:#86dc00;
+	}
+
+
+	.navbar ul{
+	display:inline-block;
+	margin:0;
+	padding:0;
+	}
+
+		.navbar li{
+		margin:0;
+		padding:0;
+		list-style-type:0;
+		display:inline-block;
+		}
+
+		.navbar li a{
+		display:inline-block;
+		color:#efefef;
+		padding:1em 1.3em;
+		text-decoration:none;
+		text-transform: uppercase;
+		line-height:100%;
+		font-size: 1.2em;
+		}
+
+.callout{
+background:#4598ef;/*#86dc00;*/
+padding:3em 0;
+color:#fff;
+box-shadow:inset 0 0 10px rgba(0,0,0,0.2);
+text-align: center;
+text-shadow:0px 1px 3px rgba(0,0,0,0.2);
+display:block;
+}
+	.callout + div.grid{margin-top:50px;}
+	 a.callout{cursor:pointer;}
+	 .callout i.icon-4x{font-size:6em;}
+	 .callout h4{margin-bottom:30px;}
+	 .callout-top{margin:50px 0 0 0;}
+	 .callout p{margin-bottom:0;}
+	 .callout .button{margin-top:10px;}
+	 .callout.green{background:#19ad0b;/*#86dc00;*/}
+
+#mc_embed_signup{
+padding:30px 0;
+}
+
+#ui-preview{
+border:5px solid #ddd;
+margin:30px 0;
+display:block;
+}
