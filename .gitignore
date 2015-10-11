@@ -5,10 +5,26 @@
 composer.phar
 vendor/
 htdocs/vendor/
+node_modules/
+bower_components/
+
 
 # Local configs
 config/autoload/*.local.php
 htdocs/includes/config.php
+
+# Web config
+web.config
+.htaccess
+sitemap.xml
+sitemap.xml.gz
+
+# Logs / temp
+*.log
+*.tmp
+*.cache
+.DS_Store
+Thumbs.db
 
 # Binary gettext files
 *.mo
@@ -24,6 +40,10 @@ htdocs/data/cache/
 htdocs/data/sessions/
 htdocs/data/tmp/
 htdocs/temp/
+
+# 3rd party
+htdocs/ext/
+htdocs/admin/ext/
 
 # Legacy ZF1
 demos/
