@@ -44,6 +44,8 @@ htdocs/temp/
 # 3rd party
 htdocs/ext/
 htdocs/admin/ext/
+htdocs/third-party/
+htdocs/admin/third-party/
 
 # Legacy ZF1
 demos/

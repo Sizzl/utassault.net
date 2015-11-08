@@ -11,13 +11,13 @@
 <script type="text/javascript">
   $(document).ready(function() {
     $(".banner").bannerRotator({
-		shadow:0,
-		fullScreen:false,
-	});
+		  shadow:0,
+		  fullScreen:false,
+	  });
     $("#NewsRotator").textrotator({
-        animation: "fade",
-        separator: "%",
-		speed: 3000
+      animation: "fade",
+      separator: "%",
+		  speed: 3000
     });
 	});
 </script>

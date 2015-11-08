@@ -1,7 +1,10 @@
-	<?php 
-      $showScores = true;
-	  require("template/header.php");
-	?>
+<?php 
+	$t_start = microtime(true);
+	$showScores = true;
+	require_once("includes/globals.php");
+	include("template/header.php");
+
+?>
 	<div class="col_9" style="margin-bottom: 100px;">
 	  <h1><i class="fa fa-newspaper-o"></i> Latest News</h1><br />
 	  <!-- BANNER -->
@@ -17,7 +20,7 @@
             </li>
             <li data-title="News 2" data-delay="8000" data-transition="fade">
               <img src="images/TEMP-pic3.jpg" />
-              <div class="caption fade frontcorner" style="height: 73px; width: 800px !important; background: none; border: 0;" data-x="0" data-y="400" data-width="900" width=900")>
+              <div class="caption fade frontcorner" style="height: 73px; width: 800px !important; background: none; border: 0;" data-x="0" data-y="400" data-width="900" width="900">
                 <h3 style="background-color: rgba(0,0,0,0.8); display: inline-block; padding: 5px !important; margin: 0px !important; margin-left: 5px !important;text-transform: uppercase;">Ballistic is here!</h3><br />
 		        <p style="background-color: rgba(0,0,0,0.8); display: inline-block; margin: 5px !important; padding: 5px !important;">Change your pants and get the insider news on Assault's greatest map!</p>
               </div>
@@ -59,4 +62,8 @@
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	  </div>
 	</div>
-	<?php require("template/footer.php"); ?>
+<?php
+	include("template/footer.php");
+	$t_end = (microtime(true) - $t_start);
+	echo "<!-- page_load_time: ".$t_end."s -->";
+?>
