@@ -56,7 +56,7 @@
        		echo "<i class=\"fa fa-sign-out\"></i> <a id=\"TopBar-TopLinks-Logout\" href=\"".THIS_PAGE."/logout\">LOG OUT</a></div>";
       	} else {
       		echo "<i class=\"fa fa-user\"></i> <a href=\"https://forums.utassault.net/index.php?register\" target=\"_blank\">REGISTER</a> | ";
-       		echo "<i class=\"fa fa-sign-in\"></i> <a id=\"TopBar-TopLinks-Login\" href=\"".THIS_PAGE."#\">LOGIN</a></div>";
+       		echo "<i class=\"fa fa-sign-in\"></i> <a id=\"TopBar-TopLinks-Login\" style=\"cursor:pointer;\">LOGIN</a></div>";
       	}
       ?>
     </div>
