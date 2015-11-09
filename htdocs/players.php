@@ -1,6 +1,6 @@
 <?php 
 	$t_start = microtime(true);
-	$showScores = true;
+	$showScores = false;
 	require_once("includes/globals.php");
 	include("template/header.php");
 
